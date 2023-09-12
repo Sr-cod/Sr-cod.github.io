@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script> 
     <div class="header">
         <div class="logo">
             <img src="./image/лого горизонт.png" alt="Логотип проекта">
