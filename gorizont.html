@@ -15,7 +15,7 @@
             <img src="./image/лого горизонт.png" alt="Логотип проекта">
         </div>
         <div class="basket_balance">
-            <div class="balance">Вам доступно движков: <input type="text" placeholder="Name" id="user_name"></div>
+            <div class="balance">Вам доступно движков: <input type="text" id="user_name"></div>
             <div class="basket">
                 <a href="#">
                     <img src="./image/корзина.png" alt="Корзина">
@@ -119,11 +119,7 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        let bu2 = document.getElementById("bu2");
-
-        bu2.addEventListener("click", () => {
             document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name;
-        });
     </script>
 </body>
 </html>
