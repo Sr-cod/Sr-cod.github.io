@@ -31,7 +31,7 @@
             <h3 class="product-title">Бутылка для воды с логотипом</h3>
             <img src="./image/Ручка.png" alt="Product 1">
             <p class="product-price">Необходимо движков: 400</p>
-            <button id="buy" class="buy-btn btn btn-primary">Заказать</button>
+            <button class="buy-btn btn btn-primary" id="bu2">Заказать</button>
         </div>
 
         <div class="product">
@@ -119,9 +119,9 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        let buy = document.getElementById("buy");
+        let bu2 = document.getElementById("bu2");
 
-        buy.addEventListener("click", () => {
+        bu2.addEventListener("click", () => {
             document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name;
         });
     </script>
