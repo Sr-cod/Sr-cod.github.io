@@ -15,15 +15,12 @@
             <img src="./image/лого горизонт.png" alt="Логотип проекта">
         </div>
         <div class="basket_balance">
-            <div class="balance">Вам доступно движков: "|-|"</div>
+            <div class="balance">Вам доступно движков: <input type="text" placeholder="Name" id="user_name"></div>
             <div class="basket">
                 <a href="#">
                     <img src="./image/корзина.png" alt="Корзина">
                 </a>
             </div>
-
-
-
         </div>
     </div>
 
@@ -34,7 +31,7 @@
             <h3 class="product-title">Бутылка для воды с логотипом</h3>
             <img src="./image/Ручка.png" alt="Product 1">
             <p class="product-price">Необходимо движков: 400</p>
-            <button class="buy-btn btn btn-primary">Заказать</button>
+            <button id="buy" class="buy-btn btn btn-primary">Заказать</button>
         </div>
 
         <div class="product">
@@ -120,5 +117,13 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let buy = document.getElementById("buy");
+
+        buy.addEventListener("click", () => {
+            document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name;
+        });
+    </script>
 </body>
 </html>
