@@ -119,9 +119,8 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        
-            document.getElementById(".balance").value = "Ваш Ник: " + tg.initDataUnsafe.user.first_name;
-            'var element = document.querySelector(".balance");'
+        let user = tg.initDataUnsafe.user.first_name;
+        let element = document.querySelector(".balance");
         element.innerText = user;
         'tg.expand();'
     </script>
