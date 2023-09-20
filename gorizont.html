@@ -15,7 +15,7 @@
             <img src="./image/лого горизонт.png" alt="Логотип проекта">
         </div>
         <div class="basket_balance">
-            <div class="balance"/div>
+            <div class="balance">Привет!</div>
             <div class="basket">
                 <a href="#">
                     <img src="./image/корзина.png" alt="Корзина">
@@ -121,8 +121,9 @@
         let tg = window.Telegram.WebApp;
         
             document.getElementById(".balance").value = "Ваш Ник: " + tg.initDataUnsafe.user.first_name;
-        
-        tg.expand();
+            'var element = document.querySelector(".balance");'
+        element.innerText = user;
+        'tg.expand();'
     </script>
 </body>
 </html>
